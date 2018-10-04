@@ -8,7 +8,7 @@
             "name": "WebApi",
             "type": "coreclr",
             "request": "launch",
-            // "preLaunchTask": "build",
+            "preLaunchTask": "build",
             "program": "${workspaceFolder}/Free4Meet.WebApi/bin/Debug/netcoreapp2.1/Free4Meet.WebApi.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Free4Meet.WebApi",
@@ -29,7 +29,8 @@
                 }
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5002"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
@@ -39,7 +40,7 @@
             "name": "Web",
             "type": "coreclr",
             "request": "launch",
-            // "preLaunchTask": "build",
+            "preLaunchTask": "build",
             "program": "${workspaceFolder}/Free4Meet.Web/bin/Debug/netcoreapp2.1/Free4Meet.Web.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Free4Meet.Web",
@@ -60,7 +61,8 @@
                 }
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

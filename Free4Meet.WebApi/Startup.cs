@@ -40,7 +40,7 @@ namespace Free4Meet.WebApi
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }

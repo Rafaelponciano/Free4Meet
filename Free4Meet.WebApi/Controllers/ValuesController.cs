@@ -21,7 +21,7 @@ namespace Free4Meet.WebApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return "Value: " + id;
         }
 
         // POST api/values
